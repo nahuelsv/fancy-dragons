@@ -5,7 +5,7 @@ import * as AWS from 'aws-sdk';
 export class DragonsRepository {
     constructor(
         private readonly docClient: DocumentClient = new AWS.DynamoDB.DocumentClient(),
-        private readonly dragonsTable = "dragons" //process.env.DRAGONS_TABLE,
+        private readonly dragonsTable = "dragon_stats" //process.env.DRAGONS_TABLE,
     ) {}
     
     async getAllDragons(): Promise<DragonInterface[]> {
