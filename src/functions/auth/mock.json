@@ -1,0 +1,9 @@
+{
+  
+  "httpMethod": "POST",
+  "headers": {
+    "Content-Type": "application/json"
+    },
+  "body": "{\"email_address\": \"dave@dragoncardgame001.com\", \"password\": \"apple\"}"
+}
+  
