@@ -5,9 +5,14 @@ phase:
     runtime-version:
       nodejs: 12
     commands:
+      - npm i -g serverless@3.1.1
       - npm ci
     on-failure: ABORT
   build:
     commands:
       - serverless deploy 
     on-failure: ABORT
+
+cache:
+  paths:
+    - node_modules
