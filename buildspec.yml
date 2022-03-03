@@ -1,0 +1,13 @@
+version: 0.2
+
+phase: 
+  install:
+    runtime-version:
+      nodejs: 12
+    commands:
+      - npm ci
+    on-failure: ABORT
+  build:
+    commands:
+      - serverless deploy 
+    on-failure: ABORT
