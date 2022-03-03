@@ -1,6 +1,6 @@
 version: 0.2
 
-phase: 
+phases: 
   install:
     runtime-version:
       nodejs: 12
@@ -12,7 +12,3 @@ phase:
     commands:
       - serverless deploy 
     on-failure: ABORT
-
-cache:
-  paths:
-    - node_modules
